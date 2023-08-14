@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #b39ddb; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .signup-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  .signup-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .signup-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  .signup-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  
+  .signup-form .dob-input::before {
+    content: "Date of Birth: ";
+    color: #999;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<div class="signup-container">
+  <img src="images/logo.png">
+  <h2>Sign Up</h2>
+  <form class="signup-form">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    <input type="password" placeholder="Confirm Password" required>
+    <select name="gender" required>
+      <option value="" disabled selected>Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <input type="date" class="dob-input" required min="1900-01-01">
+    <input type="tel" placeholder="Phone Number" required>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="login.html">Log In</a></p>
+  <p>Want to go back to Main Page? <a href=index.html>SwiftStyles</a></p>
+</div>
+</body>
+</html>
